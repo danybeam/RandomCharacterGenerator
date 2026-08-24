@@ -1,71 +1,80 @@
-    body {
-      font-family: 'MV Boli', 'Comic Sans MS', 'Segoe Print', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      min-height: 100vh;
-      background-color: #ead6f1;
-    }
-    .container {
-      width: 90%;
-      max-width: 400px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      text-align: center;
-      margin-top: 10px;
-    }
-    .title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    .subtitle {
-      font-size: 0.9rem;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .button-container {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center;
-      gap: 10px;
-      padding: 5px 10px;
-      background-color: #fff;
-      border: 1px solid #ddd;
-      border-radius: 5px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-    button {
-      width: 100px;
-      padding: 5px;
-      font-size: 14px;
-      cursor: pointer;
-      border: none;
-      border-radius: 5px;
-      background-color: #ffeea6;
-      color: #000;
-      font-family: 'MV Boli', 'Comic Sans MS', 'Segoe Print', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    }
-    button:hover {
-      background-color: #eadb99;
-    }
-    .number {
-      flex-grow: 1;
-      text-align: left;
-      font-size: 14px;
-      font-weight: bold;
-      color: #555;
-      white-space: nowrap;
-    }
-    .number:empty::after {
-      content: '\00a0';
-    }
-    @media (max-width: 768px) {
-      button {
-        width: 80px;
-        font-size: 12px;
-      }
-    }
+body {
+  font-family: 'MV Boli', 'Comic Sans MS', 'Segoe Print', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  background-color: #ead6f1;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  width: 100px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffeea6;
+  color: #000;
+  font-family: 'MV Boli', 'Comic Sans MS', 'Segoe Print', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+button:hover {
+  background-color: #eadb99;
+}
+
+.number {
+  flex-grow: 1;
+  text-align: left;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  white-space: pre-line;
+}
+
+.number:empty::after {
+  content: '\00a0';
+}
+
+@media (max-width: 768px) {
+  button {
+    width: 80px;
+    font-size: 12px;
+  }
+}
