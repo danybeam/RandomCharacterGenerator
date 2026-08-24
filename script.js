@@ -3,7 +3,7 @@
 const Race = ["Human", "Elf", "Dwarf", "Half-foot", "Orc", "Dragonborn/Draconoid", "Hybrid"]
 const BodyType = ["Short", "Tall", "Fat", "Thin", "Muscular", "Feeble"]
 const Posture = ["Hunched", "Stiff", "Graceful", "Clumsy", "Confident", "Cowardly"]
-const HeadShape = ["Sharp jaw", "Round", "Angular", "Alien", "Square"]
+const HeadShape = ["Sharp jaw", "Round", "Angular", "Square"]
 
 // Hair and Face
 const HairStyle = ["Buzz cut", "Mohawk", "Bald", "Short length", "Medium length", "Long hair (loose)", "Long hair (ponytail)", "Pigtails", "Single braid", "Multiple braids", "Cornrows", "Shave side"]
@@ -37,10 +37,12 @@ function generateCharacterWithAnimation(index) {
   let explanationIndex = -1;
   const interval = setInterval(() => {
     explanationIndex = Math.floor(Math.random() * arr.length)
+    
     element.textContent = arr[explanationIndex];
     if (index == 14) {
       elementExplanation.textContent = MiscelanousExplanation[explanationIndex];
     }
+
     count++;
     if (count > 20) {
       clearInterval(interval);
