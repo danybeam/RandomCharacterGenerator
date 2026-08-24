@@ -1,4 +1,4 @@
-# Tuliz Random Animal Generator
+# Random Character Generator (a Tuliz Random Animal Generator remix)
 ![License](https://img.shields.io/badge/license-MIT-green) ![Repo Size](https://img.shields.io/github/repo-size/danybeam/RandomCharacterGenerator)![Issues](https://img.shields.io/github/issues/danybeam/RandomCharacterGenerator)![Contributors](https://img.shields.io/github/contributors/danybeam/RandomCharacterGenerator)![Made With](https://img.shields.io/badge/Made%20With-%E2%9C%A8%20HTML%20%E2%9C%A8-blueviolet)![Stars](https://img.shields.io/github/stars/danybeam/RandomCharacterGenerator)  
 
 ## About
